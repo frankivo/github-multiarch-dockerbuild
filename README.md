@@ -8,7 +8,7 @@ This does not use the *Docker Hub* "Automated Build", which does not support bui
 Setup your project so that it builds from a *Dockerfile*.
 Preferably use a multi-stage build on Alpine Linux, to keep the image as small as posible.
 
-Then copy the [.github/build.yml] to your project and change the *Docker Hub* username and repository.
-Finally create a _Access Token_ in *Docker Hub* and add it a a *secret* named _DOCKERHUB_ in your *GitHub* project.
+Then copy the [build.yml](.github/workflows/build.yml) to your project and change the *Docker Hub* username and repository.
+Finally create a **Access Token** in *Docker Hub* and add it a a *secret* named **DOCKERHUB** in your *GitHub* project.
 
 You should now have a multi-arch Docker image in *Docker Hub*!
